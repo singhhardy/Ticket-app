@@ -47,6 +47,19 @@ export const getTicket = createAsyncThunk ('ticket/get', async(ticketId, thunkAP
     }
 })
 
+// Close Ticket
+export const closeTicket = createAsyncThunk ('ticket/close', async(ticketId, thunkAPI) => {
+    try{
+        console.log(ticketId)
+        const token = thunkAPI.getState().auth.user.token
+        return await ticketService.closeTicket(ticketId, token)
+    } catch(error){
+        const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString()
+
+        return thunkAPI.rejectWithValue(message)
+    }
+})
+
 export const ticketSlice = createSlice({
     name: 'ticket',
     initialState,
