@@ -112,10 +112,6 @@ const updateTicket = asyncHandler(async(req, res) => {
     res.status(200).json(updatedTicket)
 })
 
-
-
-
-
 // @desc Get User Tickets
 // @route POST /api/tickets
 // @access Private
