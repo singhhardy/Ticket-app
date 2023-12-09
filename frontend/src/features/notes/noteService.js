@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = '/api/tickets/'
+const API_URL = 'https://friendly-cow-leg-warmers.cyclic.app/api/tickets/'
 
 // Get ticket Notes
 const getNotes = async (ticketId, token) => {
