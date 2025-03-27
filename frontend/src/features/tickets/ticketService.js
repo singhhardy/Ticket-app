@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://friendly-cow-leg-warmers.cyclic.app/api/tickets/'
+const API_URL = 'http://localhost:5000/api/users/'
 
 // Create new ticket
 const createTicket = async (ticketData, token) => {
