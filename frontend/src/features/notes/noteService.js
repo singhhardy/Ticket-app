@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = 'http://localhost:5000/api/tickets/'
+const API_URL = 'https://ticket-app-nu-pearl.vercel.app//api/tickets/'
 
 // Get ticket Notes
 const getNotes = async (ticketId, token) => {

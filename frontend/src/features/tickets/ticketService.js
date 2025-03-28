@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/users/'
+const API_URL = 'https://ticket-app-nu-pearl.vercel.app/api/users/'
 
 // Create new ticket
 const createTicket = async (ticketData, token) => {
